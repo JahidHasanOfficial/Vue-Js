@@ -1,0 +1,25 @@
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.active{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(48, 48, 85);
+}
+button{
+    margin: 10px;
+   
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js Part 3`</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app" style="color: aqua;"><b>{{ message }}</b>
+        <h1><a :href="VueJs">VueJs</a></h1>
+    
+        <h1>Data and Attributes Binding</h1>
+       
+        <p>sss{{ infodata.data }}</p>
+        <p><a v-bind:href="infodata.VueJs">vuejs</a></p>
+
+        <h1>string manipulation</h1>
+        <p v-html="htmlcode"> </p>
+        
+    </div>
+
+    <script src="app.js">
+
+ </script>
+</body>
+</html>

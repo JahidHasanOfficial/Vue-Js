@@ -1,4 +1,4 @@
-var appCreated = Vue.createApp({
+var app = Vue.createApp({
     data() {
         return {
             message: 'Hello Vue!'
