@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue JS 3 Bangla Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="vue.global.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>Vue JS 3 Bangla Tutorial</h2>
+    </header>
+
+    <div id="app">
+      <h3>Skills</h3>
+      <input
+       type="text"
+        v-model="review" />
+      
+      <ul>
+       <p>
+        <li
+        style="list-style-type: none;"
+         v-for="(skill, i) in skills"
+         @click="removeSkill(i)"
+         :key="skill.name"
+        >
+          {{i + 1}}. {{ skill.name }} ({{ skill.experience }}) <br> <br>
+         
+        </li>
+       </p>
+      </ul> <br>
+      <h3>Total Count: {{ totalCount1 }}</h3>
+      <br> <br>
+      <ul>
+        <p>
+         <li
+         style="list-style-type: none;"
+          v-for="(skill, i) in experiencedSkills"
+          @click="removeSkill(i)"
+          :key="skill.name"
+         >
+           {{i + 1}}. {{ skill.name }} ({{ skill.experience }}) <br> <br>
+          
+         </li>
+        </p>
+       </ul> <br>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
